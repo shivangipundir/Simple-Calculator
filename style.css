@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0,0,0);
+}
+.calculator{
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 14px;
+    background: #3a445261;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6),inset 0 1px 3px rgba(255, 255, 255, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+input{
+    width: 320px;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgbs(84, 84, 84, 0.1);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: #fff;
+}
+input::placeholder{
+    color: #fff;
+}
+button{
+    border: 0;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 10px;
+    background: transparent;
+    color: #fff;
+    font-size: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2),5px 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+button:hover {
+    background-color: #fff;
+    color: rgb(0,0,0);
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+.equalBtn{
+    background-color: #cba32c;
+}
+.equalBtn:hover{
+    background-color: #fff;
+    color: #cba32c;
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+.operator{
+    color: #30b2ea;
+}
+.operator:hover{
+    background-color:#30b2ea ;
+    color: #fff;
+}
+.del{
+    color: #f44336;
+}
+.del:hover{
+    background-color: #f44336;
+    color: #fff;
+}
